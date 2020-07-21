@@ -11,11 +11,15 @@ Architechture Till Now:
 
 ![](PresentArchitechture.png)
 
+Run the following to test the App:
 
+Server.py ---> python Server.py
+Goto React Native App Directory and press:
+npm install
+npm start
 
 # TO DO:
-1. Add an ability in mobile App to train images of new people 
-2. Create an Attendance System Database Architechture
-3. Give the App ability to record Attendance
+1. Create an Attendance System Database Architechture
+2. Give the App ability to record Attendance
 
 
