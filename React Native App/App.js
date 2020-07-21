@@ -7,17 +7,37 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import * as firebase from 'firebase';
 import * as Font from 'expo-font';
-import IntialPage from "./screens/Intial";
+import Recog from "./screens/Recog";
+import Initial from "./screens/Intial";
+import Trainer from "./screens/Trainer";
 
 import { Ionicons } from '@expo/vector-icons';
 const stacked = createStackNavigator({
-  Intiail:{
-    screen:IntialPage,
+  Recognize:{
+    screen:Recog,
     navigationOptions:()=>({
       headerTitle: "Welcome"
     })
+  },
+  Initial:{
+    screen:Initial,
+    navigationOptions:()=>({
+      headerTitle: "Welcome"
+    })
+
+  },
+  Trainer:{
+    screen:Trainer,
+    navigationOptions:()=>({
+      headerTitle:"Train Images"
+    })
   }
-})
+
+},{
+  initialRouteName:"Initial"
+
+}
+)
 
 
 const AppContainer = createAppContainer(stacked);
