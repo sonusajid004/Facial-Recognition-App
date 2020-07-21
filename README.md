@@ -9,6 +9,7 @@ Backend Server: Flask
 
 Architechture Till Now:
 
+![](PresentArchitechture.png)
 
 
 
