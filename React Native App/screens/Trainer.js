@@ -54,7 +54,7 @@ export default class EditProfileAlumni extends Component {
   }
 
   submit = ()=>{
-      if(this.state.uriImages.length<=5)
+      if(this.state.uriImages.length<5)
       {
           Alert.alert("Please add atleast 5 images")
       }
@@ -77,7 +77,8 @@ export default class EditProfileAlumni extends Component {
   
           })
           .then((res)=>{
-              this.setState({loading:false});
+              Alert.alert("Training Status:"+res['status']);
+              this.setState({loading:false,base64Images:[],uriImages:[]});
           })
           .catch((err)=>console.log(err));
       }

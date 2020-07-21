@@ -14,7 +14,7 @@ export default class CameraComponent extends Component {
        </TouchableOpacity>
        <TouchableOpacity onPress={()=>{this.props.navigation.navigate("Recognize")}}>
          <View style={{justifyContent:"center",alignItems:"center",elevation:2,margin:20,borderWidth:0.2,height:100,width:150,borderRadius:10}}>
-           <Text>Record Attendance</Text>
+           <Text>Recognize</Text>
          </View>
        </TouchableOpacity>
         

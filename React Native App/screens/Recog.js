@@ -36,6 +36,7 @@ export default class CameraComponent extends Component {
             alert('No face detected!');
             return;
         }
+        this.setState({name:'',prob:''});
         await this.setState({loading:true})
         let photo = await this.camera.takePictureAsync({ base64: true });
         const {uri,base64} = photo;
@@ -147,13 +148,14 @@ export default class CameraComponent extends Component {
 
         <View style={{flex:0.2,flexDirection:"column",justifyContent:"center"}}>
         <Text style={{color:'green',fontSize:20,fontWeight:"bold",alignSelf:"center"}}>{this.state.name} {this.state.prob}</Text>
-             
+                  
                   <Button style={{
                     backgroundColor: "#007AFF",
                     alignSelf: "center",
                     padding:10,
                     marginTop: 10
-                  }} onPress={()=>{this.captureImage()}}  ><Text>Recognize</Text></Button>
+                  }} onPress={()=>{this.captureImage()}} ><Text>Recognize</Text></Button>
+
                   {this.state.loading&&(<ActivityIndicator size="large"></ActivityIndicator>)}
                  
         
