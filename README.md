@@ -1,4 +1,4 @@
-# Facial-Recognition-App
+# Facial-Recognition-Based-Attendance-App
 
 This project is for designing a mobile based Facial Attendance Recognition System.
 
@@ -16,5 +16,6 @@ Architechture Till Now:
 # TO DO:
 1. Add an ability in mobile App to train images of new people 
 2. Create an Attendance System Database Architechture
+3. Give the App ability to record Attendance
 
 
