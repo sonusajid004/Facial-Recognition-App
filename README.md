@@ -14,8 +14,14 @@ Architechture Till Now:
 Run the following to test the App:
 
 Server.py ---> python Server.py
+
+
 Goto React Native App Directory and press:
+
+
 npm install
+
+
 npm start
 
 # TO DO:
